@@ -1,0 +1,36 @@
+{
+  "menuItems": [
+    {
+      "id": 1,
+      "menuType": "Breakfast",
+      "menuItem": "Avocado Toast",
+      "cost": "500"
+    },
+
+    {
+      "id": 2,
+      "menuType": "Brunch",
+      "menuItem": "Mushroom and Spinach Crepes",
+      "cost": "625"
+    },
+
+    {
+      "id": 3,
+      "menuType": "Lunch",
+      "menuItem": "Vegetable Stir-Fry",
+      "cost": "585"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "menuItemId": 1,
+      "review": "could have charged even more!"
+    },
+    {
+      "id": 2,
+      "menuItemId": 3,
+      "review": "really knocked my socks off"
+    }
+  ]
+}
