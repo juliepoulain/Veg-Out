@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import BreakfastList from "./BreakfastList";
 
 function BreakfastPage() {
+    
   const [menuItems, setMenuItems] = useState([]);
 
   return (
