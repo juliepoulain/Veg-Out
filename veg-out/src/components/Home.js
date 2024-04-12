@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "./NavBar";
-import BreakfastList from "./BreakfastList";
+import BreakfastPage from "./BreakfastPage";
 
 function Home() {
   return (
@@ -12,6 +12,9 @@ function Home() {
       <h2>LA's Hottest Vegetarian Restaurant</h2>
       <h3>About</h3>
       <p>about this restaurant</p>
+      <div>
+        <BreakfastPage />
+      </div>
     </div>
   );
 }

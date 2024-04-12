@@ -1,14 +1,15 @@
 import React from "react";
 
-function MenuItemCard(){
-    return (
-        <li className="card">
-            <img src="../placeholder.jpeg" alt="tbd"/>
-            <h4>Menu Item Name</h4>
-            <p>Price: tbd</p>
-            <button>Leave a Review</button>
-        </li>
-    )
+function MenuItemCard({ image, name, price }) {
+  return (
+    <li className="card">
+      <img src={image} alt={name} />
+      <h4>{name}</h4>
+      <p>Price: ${price}</p>
+      <button>Read Reviews</button>
+      <button>Write a Review</button>
+    </li>
+  );
 }
 
-export default MenuItemCard
+export default MenuItemCard;
