@@ -4,7 +4,8 @@ import ReviewLi from "./ReviewLi";
 function ReviewList({ reviewItems, setReviewItems }) {
 
   useEffect(() => {
-    fetch("http://localhost:6001/reviews")
+    fetch("http://localhost:6001/reviews") 
+    // get id from use params hook
       .then((r) => r.json())
       .then((reviews) => {
         setReviewItems(reviews);

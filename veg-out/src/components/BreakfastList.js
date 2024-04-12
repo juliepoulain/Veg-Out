@@ -18,6 +18,7 @@ function BreakfastList({ menuItems, setMenuItems }) {
         name={menuItem.menuItem}
         price={menuItem.cost}
         menuType={menuItem.menuType}
+        id={menuItem.id}
       />
     ) : null
   );
