@@ -4,21 +4,96 @@
       "id": 1,
       "menuType": "Breakfast",
       "menuItem": "Avocado Toast",
-      "cost": "500"
+      "cost": "500",
+      "image": ".images/Avacado Toast.jpg"
     },
 
     {
       "id": 2,
       "menuType": "Brunch",
       "menuItem": "Mushroom and Spinach Crepes",
-      "cost": "625"
+      "cost": "625",
+      "image": ".images/Mushroom and Spinach Crepes.jpg"
     },
 
     {
       "id": 3,
       "menuType": "Lunch",
       "menuItem": "Vegetable Stir-Fry",
-      "cost": "585"
+      "cost": "585",
+      "image": ".images/Vegetable Stir Fry.jpg"
+    },
+
+    {
+      "id": 4,
+      "menuType": "Breakfast",
+      "menuItem": "Greek Yogurt Parfait",
+      "cost": "475",
+      "image": ".images/Greek Yogurt Parfait.jpg"
+    },
+
+    {
+      "id": 5,
+      "menuType": "Brunch",
+      "menuItem": "Eggs Florentine Quiche",
+      "cost": "620",
+      "image": ".images/Eggs Florentine Quiche.jpg"
+    },
+
+    {
+      "id": 6,
+      "menuType": "Lunch",
+      "menuItem": "Vegetarian Sushi Rolls",
+      "cost": "495",
+      "image": ".images/Vegetarian Sushi.jpg"
+    },
+
+    {
+      "id": 7,
+      "menuType": "Breakfast",
+      "menuItem": "Avocado and Egg Breakfast Pizza ",
+      "cost": "515",
+      "image": ".images/Avocado and Egg Breakfast Pizza.jpg"
+    },
+
+    {
+      "id": 8,
+      "menuType": "Brunch",
+      "menuItem": "Ricotta and Lemon Pancakes",
+      "cost": "570",
+      "image": ".images/Ricotta and Lemon Pancakes.jpg"
+    },
+
+    {
+      "id": 9,
+      "menuType": "Lunch",
+      "menuItem": "Pumpkin and Sage Risotto",
+      "cost": "625",
+      "image": ".images/Pumpkin and Sage Risotto.jpg"
+    },
+
+    {
+      "id": 10,
+      "menuType": "Breakfast",
+      "menuItem": "Frittata with Asparagus and Goat Cheese",
+      "cost": "645",
+      "image": ".images/Frittata with Asparagus and Goat Cheese.jpg"
+    },
+
+    {
+      "id": 11,
+      "menuType": "Brunch",
+      "menuItem": "Mushroom and Leek Strata",
+      "cost": "490",
+      "image": ".images/Mushroom and Leek Strata.jpg"
+    },
+
+    {
+      "id": 12,
+      "menuType": "Lunch",
+      "menuItem": "Stuffed Bell Peppers",
+      "cost": "505",
+      "image": ".images/Stuffed Bell Peppers.jpg"
     }
   ],
   "reviews": [
@@ -31,6 +106,21 @@
       "id": 2,
       "menuItemId": 3,
       "review": "really knocked my socks off"
+    },
+    {
+      "id": 3,
+      "menuItemId": 7,
+      "review": "add 3 inches to my vertical leap"
+    },
+    {
+      "id": 4,
+      "menuItemId": 2,
+      "review": "after trying this I could stare directly at the eclipse"
+    },
+    {
+      "id": 5,
+      "menuItemId": 9,
+      "review": "inspired me to write a new commercial jingle"
     }
   ]
 }
