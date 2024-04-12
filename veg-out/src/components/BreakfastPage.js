@@ -1,10 +1,18 @@
-import React from "react"
-
+import React, {useState} from "react";
+import BreakfastList from "./BreakfastList";
 
 function BreakfastPage() {
-    return (
-        <BreakfastList />
-    )
+  const [menuItems, setMenuItems] = useState([]);
+
+  return (
+    <div>
+      <h2>Breakfast Menu</h2>
+      <BreakfastList 
+        menuItems={menuItems}
+        setMenuItems={setMenuItems}
+      />
+    </div>
+  );
 }
 
-export default BreakfastPage
+export default BreakfastPage;
