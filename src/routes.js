@@ -1,5 +1,6 @@
 import ReviewsPage from "./components/ReviewsPage";
 import Home from "./components/Home"
+import ErrorPage from "./components/ErrorPage";
 
 const routes = [
   {
@@ -9,7 +10,7 @@ const routes = [
   {
     path: "/reviews/:id",
     element: <ReviewsPage />,
-  },
+  }
 ];
 
 export default routes;
