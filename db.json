@@ -5,7 +5,13 @@
       "menuType": "Breakfast",
       "menuItem": "Avocado Toast",
       "cost": "500",
-      "image": "./images/Avacado Toast.jpg"
+      "image": "./images/Avacado Toast.jpg",
+      "itemReviews": [
+        {
+          "id": 1,
+          "review": "could have charged even more!"
+        }
+      ]
     },
 
     {
@@ -13,7 +19,13 @@
       "menuType": "Brunch",
       "menuItem": "Mushroom and Spinach Crepes",
       "cost": "625",
-      "image": "./images/Mushroom and Spinach Crepes.jpg"
+      "image": "./images/Mushroom and Spinach Crepes.jpg",
+      "itemReviews": [
+        {
+          "id": 1,
+          "review": "after trying this I could stare directly at the eclipse"
+        }
+      ]
     },
 
     {
@@ -21,7 +33,13 @@
       "menuType": "Lunch",
       "menuItem": "Vegetable Stir-Fry",
       "cost": "585",
-      "image": "./images/Vegetable Stir Fry.jpg"
+      "image": "./images/Vegetable Stir Fry.jpg",
+      "itemReviews": [
+        {
+          "id": 1,
+          "review": "really knocked my socks off"
+        }
+      ]
     },
 
     {
@@ -29,7 +47,8 @@
       "menuType": "Breakfast",
       "menuItem": "Greek Yogurt Parfait",
       "cost": "475",
-      "image": "./images/Greek Yogurt Parfait.jpg"
+      "image": "./images/Greek Yogurt Parfait.jpg",
+      "itemReviews": []
     },
 
     {
@@ -37,7 +56,8 @@
       "menuType": "Brunch",
       "menuItem": "Eggs Florentine Quiche",
       "cost": "620",
-      "image": "./images/Eggs Florentine Quiche.jpg"
+      "image": "./images/Eggs Florentine Quiche.jpg",
+      "itemReviews": []
     },
 
     {
@@ -45,7 +65,8 @@
       "menuType": "Lunch",
       "menuItem": "Vegetarian Sushi Rolls",
       "cost": "495",
-      "image": "./images/Vegetarian Sushi.jpg"
+      "image": "./images/Vegetarian Sushi.jpg",
+      "itemReviews": []
     },
 
     {
@@ -53,7 +74,13 @@
       "menuType": "Breakfast",
       "menuItem": "Avocado and Egg Breakfast Pizza ",
       "cost": "515",
-      "image": "./images/Avocado and Egg Breakfast Pizza.jpg"
+      "image": "./images/Avocado and Egg Breakfast Pizza.jpg",
+      "itemReviews": [
+        {
+          "id": 1,
+          "review": "add 3 inches to my vertical leap"
+        }
+      ]
     },
 
     {
@@ -61,7 +88,8 @@
       "menuType": "Brunch",
       "menuItem": "Ricotta and Lemon Pancakes",
       "cost": "570",
-      "image": "./images/Ricotta and Lemon Pancakes.jpg"
+      "image": "./images/Ricotta and Lemon Pancakes.jpg",
+      "itemReviews": []
     },
 
     {
@@ -69,7 +97,13 @@
       "menuType": "Lunch",
       "menuItem": "Pumpkin and Sage Risotto",
       "cost": "625",
-      "image": "./images/Pumpkin and Sage Risotto.jpg"
+      "image": "./images/Pumpkin and Sage Risotto.jpg",
+      "itemReviews": [
+        {
+          "id": 1,
+          "review": "inspired me to write a new commercial jingle"
+        }
+      ]
     },
 
     {
@@ -77,7 +111,8 @@
       "menuType": "Breakfast",
       "menuItem": "Frittata with Asparagus and Goat Cheese",
       "cost": "645",
-      "image": "./images/Frittata with Asparagus and Goat Cheese.jpg"
+      "image": "./images/Frittata with Asparagus and Goat Cheese.jpg",
+      "itemReviews": []
     },
 
     {
@@ -85,7 +120,8 @@
       "menuType": "Brunch",
       "menuItem": "Mushroom and Leek Strata",
       "cost": "490",
-      "image": "./images/Mushroom and Leek Strata.jpg"
+      "image": "./images/Mushroom and Leek Strata.jpg",
+      "itemReviews": []
     },
 
     {
@@ -93,34 +129,8 @@
       "menuType": "Lunch",
       "menuItem": "Stuffed Bell Peppers",
       "cost": "505",
-      "image": "./images/Stuffed Bell Peppers.jpg"
-    }
-  ],
-  "reviews": [
-    {
-      "id": 1,
-      "menuItemId": 1,
-      "review": "could have charged even more!"
-    },
-    {
-      "id": 2,
-      "menuItemId": 3,
-      "review": "really knocked my socks off"
-    },
-    {
-      "id": 3,
-      "menuItemId": 7,
-      "review": "add 3 inches to my vertical leap"
-    },
-    {
-      "id": 4,
-      "menuItemId": 2,
-      "review": "after trying this I could stare directly at the eclipse"
-    },
-    {
-      "id": 5,
-      "menuItemId": 9,
-      "review": "inspired me to write a new commercial jingle"
+      "image": "./images/Stuffed Bell Peppers.jpg",
+      "itemReviews": []
     }
   ]
 }
