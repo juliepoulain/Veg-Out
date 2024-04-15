@@ -1,10 +1,10 @@
 import React from "react";
 
-function ReviewLi({ review, name, image }) {
+function ReviewCard({ review, name, image }) {
   return (
     <div>
-      <img src={image} alt={name} />
-      <h1>{name} Reviews:</h1>
+      {/* <img src={image} alt={name} />
+      <h1>{name} Reviews:</h1> */}
       <ul>
         <li>{review}</li>
       </ul>
@@ -12,4 +12,4 @@ function ReviewLi({ review, name, image }) {
   );
 }
 
-export default ReviewLi;
+export default ReviewCard;

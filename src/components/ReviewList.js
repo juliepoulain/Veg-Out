@@ -11,14 +11,19 @@ function ReviewList({ reviewItems, setReviewItems, itemData, setData }) {
       .then((r) => r.json())
       .then((data) => {
         setReviewItems(data.itemReviews);
-        setData(data);
+        // setData(data);
         console.log(data);
       });
   }, [id]);
 
   const reviewCards = reviewItems.map((review) => (
     <div>
-      <ReviewCard key={review.id} review={review.review} name={itemData.menuItem} image={itemData.image} />
+      <ReviewCard
+        key={review.id}
+        review={review.review}
+        // name={itemData.menuItem}
+        // image={itemData.image}
+      />
     </div>
   ));
 
