@@ -1,12 +1,17 @@
 import React from "react";
 
-function ReviewCard({ review, name, image }) {
+function ReviewCard({ review, reviewer }) {
   return (
     <div>
-      {/* <img src={image} alt={name} />
-      <h1>{name} Reviews:</h1> */}
       <ul>
-        <li>{review}</li>
+        <li>
+          {review}
+          <ul>
+            <li>
+              <em>-written by {reviewer}</em>
+            </li>
+          </ul>
+        </li>
       </ul>
     </div>
   );

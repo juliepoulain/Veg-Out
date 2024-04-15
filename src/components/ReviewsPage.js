@@ -3,15 +3,17 @@ import ReviewList from "./ReviewList";
 
 function ReviewsPage() {
   const [reviewItems, setReviewItems] = useState([]);
-  const [itemData, setData] = useState({})
+  const [itemData, setItemData] = useState({})
 
   return (
     <div>
+      <img src={itemData.image} alt={itemData.menuItem}/>
+      <h3>{itemData.menuItem} Reviews:</h3>
       <ReviewList 
         reviewItems={reviewItems} 
         setReviewItems={setReviewItems}
         itemData={itemData}
-        setData={setData}
+        setItemData={setItemData}
       />
     </div>
   );

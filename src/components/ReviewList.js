@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import ReviewCard from "./ReviewCard";
 import { useParams } from "react-router-dom";
 
-function ReviewList({ reviewItems, setReviewItems, itemData, setData }) {
+function ReviewList({ reviewItems, setReviewItems, itemData, setItemData }) {
   const params = useParams();
   const id = params.id;
 
@@ -11,18 +11,18 @@ function ReviewList({ reviewItems, setReviewItems, itemData, setData }) {
       .then((r) => r.json())
       .then((data) => {
         setReviewItems(data.itemReviews);
-        // setData(data);
+        setItemData(data);
         console.log(data);
+        console.log(itemData.image)
       });
   }, [id]);
 
   const reviewCards = reviewItems.map((review) => (
     <div>
       <ReviewCard
-        key={review.id}
+        key={review.reviewId}
         review={review.review}
-        // name={itemData.menuItem}
-        // image={itemData.image}
+        reviewer={review.reviewer}
       />
     </div>
   ));
