@@ -6,7 +6,7 @@ function BreakfastPage() {
   const [menuItems, setMenuItems] = useState([]);
 
   return (
-    <div>
+    <div className="menu">
       <h2>Breakfast Menu</h2>
       <BreakfastList 
         menuItems={menuItems}
