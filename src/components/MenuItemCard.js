@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 function MenuItemCard({ image, name, price, id }) {
   return (
@@ -6,7 +7,7 @@ function MenuItemCard({ image, name, price, id }) {
       <h4>{name}</h4>
       <img src={image} alt={name} />
       <p>Price: ${price}</p>
-      <button>Read Reviews</button>
+      <Link to={`/reviews/${id}`}>Read Reviews</Link>
       {/* use special link component from react INSTEAD of a button. Include ID*/}
       <button>Write a Review</button>
     </li>
