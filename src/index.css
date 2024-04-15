@@ -6,7 +6,6 @@
 }
 
 body {
-  margin: 10;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -37,9 +36,10 @@ img {
 .menuCard {
   border-radius: 20%;
   background-color: rgb(251, 252, 251);
-  max-width: 50%;
+  max-width: 40%;
+  min-width: 25%;
   padding: 2% 2%;
-  margin: 3% 25% 5% 25%;
+  margin: 3% 25% 5% 28%;
 }
 
 .button-link {
@@ -50,6 +50,7 @@ img {
   text-decoration: none;
   border-radius: 25px;
   cursor: pointer;
+  margin: 2px 2px
 }
 
 .button-link:hover {
@@ -86,4 +87,17 @@ img {
 
 .active {
   color: rgb(56, 76, 55);
+}
+
+.about {
+  margin: 1% 15% 5% 15%; 
+  font-style: italic;
+}
+
+.text-container {
+  margin: 5% 10% 10% 10%;
+  background-color: rgb(250, 251, 250);
+  opacity: 90%;
+  padding: 2% 2% 2% 2%;
+  border-radius: 50%;
 }
