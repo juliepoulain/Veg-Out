@@ -12,8 +12,8 @@ function About() {
           meals that are as delicious as they are healthy.
         </p>
         <p>Explore our menu options or write a review today!</p>
-        <p>Hours: Mon-Fri 7am-3pm || Sat/Sun 8am-12pm</p>
-        <p>Located At: 111 Hollywood Boulevard</p>
+        <p className="small">Hours: Mon-Fri 7am-3pm || Sat/Sun 8am-12pm</p>
+        <p className="small">Located At: 111 Hollywood Boulevard</p>
       </div>
     </div>
   );
