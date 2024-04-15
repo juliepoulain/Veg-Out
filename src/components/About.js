@@ -4,7 +4,7 @@ function About() {
   return (
     <div className="text-container">
       <h1>🥕🍅🥬 VEG OUT 🥬🍅🥕</h1>
-      <h3>LA-Based Artisanal Vegeterian Restaurant</h3>
+      <h3>LA-Based Artisanal Vegetarian Restaurant</h3>
       <div className="about">
         <p>
           Welcome to Veg Out—LA's hottest new vegetarian restaurant. Join us on
