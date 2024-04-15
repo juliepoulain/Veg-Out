@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ReviewCard from "./ReviewCard";
 import { useParams } from "react-router-dom";
 
-function ReviewList({ reviewItems, setReviewItems, itemData, setItemData }) {
+function ReviewList({ reviewItems, setReviewItems, setItemData }) {
   const params = useParams();
   const id = params.id;
 
@@ -12,8 +12,6 @@ function ReviewList({ reviewItems, setReviewItems, itemData, setItemData }) {
       .then((data) => {
         setReviewItems(data.itemReviews);
         setItemData(data);
-        console.log(data);
-        console.log(itemData.image)
       });
   }, [id]);
 
