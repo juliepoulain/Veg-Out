@@ -1,10 +1,14 @@
 import ReviewsPage from "./components/ReviewsPage";
+import Home from "./components/Home"
 
 const routes = [
   {
-    path: "/reviews",
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/reviews/:id",
     element: <ReviewsPage />,
-    errorElement: <ErrorPage />,
   },
 ];
 

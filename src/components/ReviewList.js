@@ -1,25 +1,25 @@
 import React, { useEffect } from "react";
-import ReviewLi from "./ReviewLi";
+import ReviewCard from "./ReviewCard";
 import { useParams } from "react-router-dom";
 
-function ReviewList({ reviewItems, setReviewItems }) {
+function ReviewList({ reviewItems, setReviewItems, itemData, setData }) {
   const params = useParams();
-  const reviewId = params.id;
+  const id = params.id;
 
   useEffect(() => {
-    fetch(`http://localhost:6001/reviews/${reviewId}`)
+    fetch(`http://localhost:6001/menuItems/${id}`)
       .then((r) => r.json())
-      .then((reviews) => {
-        setReviewItems(reviews);
+      .then((data) => {
+        setReviewItems(data.itemReviews);
+        setData(data);
+        console.log(data);
       });
-  }, [reviewId]);
+  }, [id]);
 
   const reviewCards = reviewItems.map((review) => (
-    <ReviewLi
-      key={review.id}
-      review={review.review}
-      menuItemId={review.menuItemId}
-    />
+    <div>
+      <ReviewCard key={review.id} review={review.review} name={itemData.menuItem} image={itemData.image} />
+    </div>
   ));
 
   return <ul className="cards">{reviewCards}</ul>;
