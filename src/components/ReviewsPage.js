@@ -6,7 +6,7 @@ function ReviewsPage() {
   const [itemData, setItemData] = useState({})
 
   return (
-    <div>
+    <div className="reviews">
       <img src={itemData.image} alt={itemData.menuItem}/>
       <h3>{itemData.menuItem} Reviews:</h3>
       <ReviewList 
