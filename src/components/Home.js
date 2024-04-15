@@ -5,10 +5,10 @@ import About from "./About";
 
 function Home() {
   return (
-    <div>
+    <div className="main-container">
       <NavBar />
       <About />
-      <BreakfastPage />
+      {/* <BreakfastPage /> */}
     </div>
   );
 }
