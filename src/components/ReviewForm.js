@@ -49,6 +49,7 @@ function ReviewForm({ name }) {
     <section>
       <NavBar />
       <h1>Review: {reviewData.menuItem}</h1>
+      <img src={reviewData.image} alt={reviewData.menuItem}/>
       <form onSubmit={handleSubmit}>
         <label>
           Review:

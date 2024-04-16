@@ -101,3 +101,29 @@ img {
   padding: 2% 2% 2% 2%;
   border-radius: 50%;
 }
+
+label {
+  padding: 1% 1% 1% 1%;
+  margin: 1% 1% 1% 1%;
+}
+
+form {
+  padding: 1% 1% 1% 1%;
+  margin: 1% 1% 1% 1%;
+}
+
+input {
+  padding: 1% 1% 1% 1%;
+  margin: 1% 1% 1% 1%;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: #3a561e;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 2px 2px
+}
