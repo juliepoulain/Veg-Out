@@ -1,16 +1,16 @@
 import React, {useState} from "react";
-import BreakfastList from "./BreakfastList";
+import BrunchList from "./BrunchList";
 import NavBar from "./NavBar";
 
-function BreakfastPage() {
+function BrunchPage() {
     
   const [menuItems, setMenuItems] = useState([]);
 
   return (
     <div className="menu">
       <NavBar />
-      <h2>Breakfast Menu</h2>
-      <BreakfastList 
+      <h2>Brunch Menu</h2>
+      <BrunchList 
         menuItems={menuItems}
         setMenuItems={setMenuItems}
       />
@@ -18,4 +18,4 @@ function BreakfastPage() {
   );
 }
 
-export default BreakfastPage;
+export default BrunchPage;

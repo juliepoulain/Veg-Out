@@ -7,17 +7,14 @@ function NavBar() {
       <NavLink to="/" className="nav-link">
         Home
       </NavLink>
-      <NavLink to="/BreakfastPage" className="nav-link">
+      <NavLink to="/BreakfastMenu" className="nav-link">
         Breakfast
       </NavLink>
-      <NavLink to="/Brunch" className="nav-link">
+      <NavLink to="/BrunchMenu" className="nav-link">
         Brunch
       </NavLink>
-      <NavLink to="/Lunch" className="nav-link">
+      <NavLink to="/LunchMenu" className="nav-link">
         Lunch
-      </NavLink>
-      <NavLink to="/ReviewPage" className="nav-link">
-        Reviews
       </NavLink>
     </nav>
   );
