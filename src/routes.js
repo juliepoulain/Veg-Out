@@ -17,7 +17,7 @@ const routes = [
     element: <ReviewsPage />,
   },
   {
-    path: "/reviewForm:/id",
+    path: "/reviewForm/:id",
     element: <ReviewForm />,
   },
   {
