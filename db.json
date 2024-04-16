@@ -8,7 +8,7 @@
       "image": "../images/Avacado Toast.jpg",
       "itemReviews": [
         {
-          "reviewId": 1,
+          "id": 1,
           "review": "could have charged even more!",
           "reviewer": "Anonymous"
         }
@@ -23,12 +23,12 @@
       "image": "../images/Mushroom and Spinach Crepes.jpg",
       "itemReviews": [
         {
-          "reviewId": 1,
+          "id": 1,
           "review": "after trying this I could stare directly at the eclipse",
           "reviewer": "Anonymous"
         },
         {
-          "reviewId": 2,
+          "id": 2,
           "review": "ew",
           "reviewer": "Mark"
         }
@@ -43,7 +43,7 @@
       "image": "../images/Vegetable Stir Fry.jpg",
       "itemReviews": [
         {
-          "reviewId": 1,
+          "id": 1,
           "review": "really knocked my socks off",
           "reviewer": "Anonymous"
         }
@@ -85,17 +85,17 @@
       "image": "../images/Avocado and Egg Breakfast Pizza.jpg",
       "itemReviews": [
         {
-          "reviewId": 1,
+          "id": 1,
           "review": "added 3 inches to my vertical leap",
           "reviewer": "Anonymous"
         },
         {
-          "reviewId": 2,
+          "id": 2,
           "review": "amazing",
           "reviewer": "Anonymous"
         },
         {
-          "reviewId": 3,
+          "id": 3,
           "review": "needed more avocado",
           "reviewer": "Mark"
         }
@@ -119,7 +119,7 @@
       "image": "../images/Pumpkin and Sage Risotto.jpg",
       "itemReviews": [
         {
-          "reviewId": 1,
+          "id": 1,
           "review": "inspired me to write a new commercial jingle",
           "reviewer": "Anonymous"
         }
