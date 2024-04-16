@@ -1,6 +1,9 @@
 import { useState } from "react";
+import { useParams } from "react-router-dom";
 
 function ReviewForm() {
+  const params = useParams();
+  const id = params.id;
   const [formData, setFormData] = useState({
     review: "",
     reviewer: "",
@@ -12,6 +15,21 @@ function ReviewForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
+    fetch(`http://localhost:6001/menuItems/${id}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((r) => r.json())
+      .then((data) => {
+        setFormData({
+          id: "",
+          review: "",
+          reviewer: "",
+        });
+      });
   }
 
   return (
@@ -30,11 +48,11 @@ function ReviewForm() {
           Reviewer
           <input
             name="reviewer"
-            value={formData.reviwer}
+            value={formData.reviewer}
             onChange={handleChange}
           />
         </label>
-        <button tyoe="submit"> Submit Review</button>
+        <button type="submit"> Submit Review</button>
       </form>
     </section>
   );
