@@ -1,54 +1,63 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import NavBar from "./NavBar";
 
-function ReviewForm() {
+function ReviewForm({ name }) {
   const params = useParams();
   const id = params.id;
-  const [formData, setFormData] = useState({
-    review: "",
-    reviewer: "",
-  });
+
+  const [newReview, setNewReview] = useState({});
+  const [reviewData, setReviewData] = useState({});
 
   function handleChange(e) {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setNewReview({ ...newReview, [e.target.name]: e.target.value });
   }
 
-  function handleSubmit(e) {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    fetch(`http://localhost:6001/menuItems/${id}`, {
+    fetch(`http://localhost:6001/reviews`, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "Application/JSON",
       },
-      body: JSON.stringify(formData),
+      body: JSON.stringify({
+        reviewContent: newReview.review,
+        reviewer: newReview.reviewer,
+        menuItemId: id,
+      }),
     })
       .then((r) => r.json())
-      .then((data) => {
-        setFormData({
-          id: "",
-          review: "",
-          reviewer: "",
-        });
+      .then((newReview) => {
+        console.log("posted new review to db.json");
       });
-  }
+  };
+
+  useEffect(() => {
+    fetch(`http://localhost:6001/menuItems/${id}?_embed=reviews`)
+      .then((r) => r.json())
+      .then((data) => {
+        setReviewData(data);
+      });
+  }, []);
 
   return (
     <section>
-      <h1> Review</h1>
+      <NavBar />
+      <h1>Review: {reviewData.menuItem}</h1>
       <form onSubmit={handleSubmit}>
         <label>
-          Review
+          Review:
           <input
             name="review"
-            value={formData.review}
+            value={reviewData.review}
             onChange={handleChange}
           />
         </label>
         <label>
-          Reviewer
+          Your Name:
           <input
             name="reviewer"
-            value={formData.reviewer}
+            value={reviewData.reviewer}
             onChange={handleChange}
           />
         </label>

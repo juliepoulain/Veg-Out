@@ -12,7 +12,7 @@ function MenuItemCard({ image, name, price, id }) {
           <Link to={`/reviews/${id}`} className="button-link">
             Read Reviews
           </Link>
-          <Link to={`/reviewform/${id}`} className="button-link">
+          <Link to={`/reviewform/${id}`} className="button-link" name={name}>
             Write a Review
           </Link>
         </li>
