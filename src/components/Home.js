@@ -8,7 +8,6 @@ function Home() {
     <div className="main-container">
       <NavBar />
       <About />
-      <BreakfastPage />
     </div>
   );
 }

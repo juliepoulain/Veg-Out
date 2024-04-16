@@ -3,9 +3,9 @@ import Home from "./components/Home";
 import ErrorPage from "./components/ErrorPage";
 import NavBar from "./components/NavBar";
 import BreakfastPage from "./components/BreakfastPage";
-import Brunch from "./components/Brunch";
+import BrunchPage from "./components/BrunchPage";
 import ReviewForm from "./components/ReviewForm";
-import Lunch from "./components/Lunch";
+import LunchPage from "./components/LunchPage";
 
 const routes = [
   {
@@ -21,16 +21,16 @@ const routes = [
     element: <ReviewForm />,
   },
   {
-    path: "/BreakfastPage",
+    path: "/BreakfastMenu",
     element: <BreakfastPage />,
   },
   {
-    path: "/Brunch",
-    element: <Brunch />,
+    path: "/BrunchMenu",
+    element: <BrunchPage />,
   },
   {
-    path: "/Lunch",
-    element: <Lunch />,
+    path: "/LunchMenu",
+    element: <LunchPage />,
   },
 
   {

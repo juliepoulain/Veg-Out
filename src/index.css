@@ -74,19 +74,19 @@ img {
 
 .nav-link{
   display: inline-block;
-  box-sizing: border-box;
   width: 60px;
   padding: 5px;
-  margin: 0 6px 6px;
+  margin: 0 2px 4px;
   background:#3a561e;
   text-decoration: none;
   text-align: center;
-  font-size: min(10vw, 15px) ;
+  font-size: small;
   color: white;
+  font-weight: bold
 }
 
 .active {
-  color: rgb(56, 76, 55);
+  background: rgb(169, 127, 23);
 }
 
 .about {
