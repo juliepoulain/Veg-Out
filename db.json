@@ -1,156 +1,162 @@
 {
   "menuItems": [
     {
-      "id": 1,
+      "id": "1",
       "menuType": "Breakfast",
       "menuItem": "Avocado Toast",
       "cost": "500",
-      "image": "../images/Avacado Toast.jpg",
-      "itemReviews": [
-        {
-          "id": 1,
-          "review": "could have charged even more!",
-          "reviewer": "Anonymous"
-        }
-      ]
+      "image": "../images/Avacado Toast.jpg"
     },
-
     {
-      "id": 2,
+      "id": "2",
       "menuType": "Brunch",
       "menuItem": "Mushroom and Spinach Crepes",
       "cost": "625",
-      "image": "../images/Mushroom and Spinach Crepes.jpg",
-      "itemReviews": [
-        {
-          "id": 1,
-          "review": "after trying this I could stare directly at the eclipse",
-          "reviewer": "Anonymous"
-        },
-        {
-          "id": 2,
-          "review": "ew",
-          "reviewer": "Mark"
-        }
-      ]
+      "image": "../images/Mushroom and Spinach Crepes.jpg"
     },
-
     {
-      "id": 3,
+      "id": "3",
       "menuType": "Lunch",
       "menuItem": "Vegetable Stir-Fry",
       "cost": "585",
-      "image": "../images/Vegetable Stir Fry.jpg",
-      "itemReviews": [
-        {
-          "id": 1,
-          "review": "really knocked my socks off",
-          "reviewer": "Anonymous"
-        }
-      ]
+      "image": "../images/Vegetable Stir Fry.jpg"
     },
-
     {
-      "id": 4,
+      "id": "4",
       "menuType": "Breakfast",
       "menuItem": "Greek Yogurt Parfait",
       "cost": "475",
-      "image": "../images/Greek Yogurt Parfait.jpg",
-      "itemReviews": []
+      "image": "../images/Greek Yogurt Parfait.jpg"
     },
-
     {
-      "id": 5,
+      "id": "5",
       "menuType": "Brunch",
       "menuItem": "Eggs Florentine Quiche",
       "cost": "620",
-      "image": "../images/Eggs Florentine Quiche.jpg",
-      "itemReviews": []
+      "image": "../images/Eggs Florentine Quiche.jpg"
     },
-
     {
-      "id": 6,
+      "id": "6",
       "menuType": "Lunch",
       "menuItem": "Vegetarian Sushi Rolls",
       "cost": "495",
-      "image": "../images/Vegetarian Sushi.jpg",
-      "itemReviews": []
+      "image": "../images/Vegetarian Sushi.jpg"
     },
-
     {
-      "id": 7,
+      "id": "7",
       "menuType": "Breakfast",
       "menuItem": "Avocado and Egg Breakfast Pizza ",
       "cost": "515",
-      "image": "../images/Avocado and Egg Breakfast Pizza.jpg",
-      "itemReviews": [
-        {
-          "id": 1,
-          "review": "added 3 inches to my vertical leap",
-          "reviewer": "Anonymous"
-        },
-        {
-          "id": 2,
-          "review": "amazing",
-          "reviewer": "Anonymous"
-        },
-        {
-          "id": 3,
-          "review": "needed more avocado",
-          "reviewer": "Mark"
-        }
-      ]
+      "image": "../images/Avocado and Egg Breakfast Pizza.jpg"
     },
-
     {
-      "id": 8,
+      "id": "8",
       "menuType": "Brunch",
       "menuItem": "Ricotta and Lemon Pancakes",
       "cost": "570",
-      "image": "../images/Ricotta and Lemon Pancakes.jpg",
-      "itemReviews": []
+      "image": "../images/Ricotta and Lemon Pancakes.jpg"
     },
-
     {
-      "id": 9,
+      "id": "9",
       "menuType": "Lunch",
       "menuItem": "Pumpkin and Sage Risotto",
       "cost": "625",
-      "image": "../images/Pumpkin and Sage Risotto.jpg",
-      "itemReviews": [
-        {
-          "id": 1,
-          "review": "inspired me to write a new commercial jingle",
-          "reviewer": "Anonymous"
-        }
-      ]
+      "image": "../images/Pumpkin and Sage Risotto.jpg"
     },
-
     {
-      "id": 10,
+      "id": "10",
       "menuType": "Breakfast",
       "menuItem": "Frittata with Asparagus and Goat Cheese",
       "cost": "645",
-      "image": "../images/Frittata with Asparagus and Goat Cheese.jpg",
-      "itemReviews": []
+      "image": "../images/Frittata with Asparagus and Goat Cheese.jpg"
     },
-
     {
-      "id": 11,
+      "id": "11",
       "menuType": "Brunch",
       "menuItem": "Mushroom and Leek Strata",
       "cost": "490",
-      "image": "../images/Mushroom and Leek Strata.jpg",
-      "itemReviews": []
+      "image": "../images/Mushroom and Leek Strata.jpg"
     },
-
     {
-      "id": 12,
+      "id": "12",
       "menuType": "Lunch",
       "menuItem": "Stuffed Bell Peppers",
       "cost": "505",
-      "image": "../images/Stuffed Bell Peppers.jpg",
-      "itemReviews": []
+      "image": "../images/Stuffed Bell Peppers.jpg"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "1",
+      "menuItemId": "1",
+      "reviewContent": "Brought indescribable joy to my life",
+      "reviewer": "julie"
+    },
+    {
+      "reviewContent": "my dogs favorite dish as well",
+      "reviewer": "Bill",
+      "menuItemId": "1",
+      "id": "CxYR0Nb"
+    },
+    {
+      "reviewContent": "just ok",
+      "reviewer": "anon",
+      "menuItemId": "2",
+      "id": "bTqRWmy"
+    },
+    {
+      "reviewContent": "added 3 inches to my vertical leap",
+      "reviewer": "anon",
+      "menuItemId": "3",
+      "id": "D3DVmWx"
+    },
+    {
+      "reviewContent": "needed more avocado",
+      "reviewer": "mark",
+      "menuItemId": "4",
+      "id": "DoBIvQV"
+    },
+    {
+      "reviewContent": "my monday favorite",
+      "reviewer": "karl",
+      "menuItemId": "4",
+      "id": "xeFy9HN"
+    },
+    {
+      "reviewContent": "inspired me to write a new commercial jingle",
+      "reviewer": "anon",
+      "menuItemId": "5",
+      "id": "oE99ngw"
+    },
+    {
+      "reviewContent": "delicious!",
+      "reviewer": "number 1 fan",
+      "menuItemId": "5",
+      "id": "ztMp-_X"
+    },
+    {
+      "reviewContent": "I loved this dish",
+      "reviewer": "anon",
+      "menuItemId": "6",
+      "id": "6fvYwT5"
+    },
+    {
+      "reviewContent": "I hated this",
+      "reviewer": "anon",
+      "menuItemId": "8",
+      "id": "tPOm8ew"
+    },
+    {
+      "reviewContent": "will be coming back for this meal every few weeks",
+      "reviewer": "joel",
+      "menuItemId": "9",
+      "id": "1wgTXg9"
+    },
+    {
+      "reviewContent": "wish this had meat in it",
+      "reviewer": "non-vegetarian",
+      "menuItemId": "3",
+      "id": "G77G_cQ"
     }
   ]
 }
