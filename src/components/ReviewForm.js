@@ -29,10 +29,6 @@ function ReviewForm({ name }) {
       .then((r) => r.json())
       .then((newReview) => {
         console.log("posted new review to db.json");
-        setNewReview({
-          review: "",
-          reviewer: "",
-        });
         e.target.reset();
       });
   };
