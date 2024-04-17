@@ -1,6 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
 
 function About() {
+
   return (
     <div className="text-container">
       <h1>🥕🍅🥬 VEG OUT 🥬🍅🥕</h1>
