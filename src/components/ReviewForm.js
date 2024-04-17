@@ -11,28 +11,32 @@ function ReviewForm({ name }) {
 
   function handleChange(e) {
     setNewReview({ ...newReview, [e.target.name]: e.target.value });
+    console.log(newReview);
   }
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch(`http://localhost:6001/reviews`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "Application/JSON",
-      },
-      body: JSON.stringify({
-        reviewContent: newReview.review,
-        reviewer: newReview.reviewer,
-        menuItemId: id,
-      }),
-    })
-      .then((r) => r.json())
-      .then((newReview) => {
-        console.log("posted new review to db.json");
-        e.target.reset();
-      });
+    if (JSON.stringify(newReview) == "{}") {
+      console.log("empty object - cannot post to db.json");
+    } else {
+      fetch(`http://localhost:6001/reviews`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "Application/JSON",
+        },
+        body: JSON.stringify({
+          reviewContent: newReview.review,
+          reviewer: newReview.reviewer,
+          menuItemId: id,
+        }),
+      })
+        .then((r) => r.json())
+        .then((newReview) => {
+          console.log("posted new review to db.json");
+          e.target.reset();
+        });
+    }
   };
-
   useEffect(() => {
     fetch(`http://localhost:6001/menuItems/${id}?_embed=reviews`)
       .then((r) => r.json())
@@ -45,7 +49,7 @@ function ReviewForm({ name }) {
     <section>
       <NavBar />
       <h1>Review: {reviewData.menuItem}</h1>
-      <img src={reviewData.image} alt={reviewData.menuItem}/>
+      <img src={reviewData.image} alt={reviewData.menuItem} />
       <form onSubmit={handleSubmit}>
         <label>
           Review:
