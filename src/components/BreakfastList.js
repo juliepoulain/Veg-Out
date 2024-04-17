@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import MenuItemCard from "./MenuItemCard";
 
-function BreakfastList({ menuItems, setMenuItems }) {
+function BreakfastList({ menuItems, setMenuItems, searchValue }) {
   useEffect(() => {
     fetch("http://localhost:6001/menuItems")
       .then((r) => r.json())
@@ -10,7 +10,12 @@ function BreakfastList({ menuItems, setMenuItems }) {
       });
   }, []);
 
-  const breakfastCards = menuItems.map((menuItem) =>
+  const breakfastCards = menuItems
+  .filter((menuItem) => {
+    return menuItem.menuItem.toLowerCase()
+      .includes(searchValue.toLowerCase())
+  })
+  .map((menuItem) =>
     menuItem.menuType === "Breakfast" ? (
       <MenuItemCard
         key={menuItem.id}
