@@ -1,3 +1,10 @@
+# About this Project
+Veg Out is a fake vegetarian restaurant - this website was built with create-react-app to show off various menu items off of a db.json. Users can navigate through to different menu page routes via react-router-dom functionality. Users can also read and/or leave reviews for each menu item. 
+
+# Contributors
+Julie Poulain, 
+Billy Dunn
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
