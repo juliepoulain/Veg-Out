@@ -34,6 +34,7 @@ function ReviewForm({ name }) {
         .then((newReview) => {
           console.log("posted new review to db.json");
           e.target.reset();
+          setNewReview({});
         });
     }
   };
