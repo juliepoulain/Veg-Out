@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import NavBar from "./NavBar";
 
 function ReviewForm() {
   const params = useParams();
   const id = params.id;
 
-
+  const [thankYou, setThankYou] = useState("");
   const [menuItem, setMenuItem] = useState({});
   const [newReview, setNewReview] = useState({
     reviewContent: "",
@@ -35,11 +35,13 @@ function ReviewForm() {
           setNewReview({
             reviewContent: "",
             reviewer: "",
-            menuItemId: id
+            menuItemId: id,
           });
+          setThankYou("Thank you for posting a new review!")
         });
     }
   };
+
   useEffect(() => {
     fetch(`http://localhost:6001/menuItems/${id}?_embed=reviews`)
       .then((r) => r.json())
@@ -72,6 +74,10 @@ function ReviewForm() {
         </label>
         <button type="submit"> Submit Review</button>
       </form>
+      <p>{thankYou}</p>
+      <Link to={`/reviews/${id}`} className="button-link">
+        Go to Reviews
+      </Link>
     </section>
   );
 }

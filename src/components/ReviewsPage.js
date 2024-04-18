@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ReviewList from "./ReviewList";
 import NavBar from "./NavBar";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 function ReviewsPage() {
   const [itemData, setItemData] = useState({});
@@ -27,6 +27,9 @@ function ReviewsPage() {
           itemData={itemData}
           setItemData={setItemData}
         />
+        <Link to={`/reviewform/${id}`} className="button-link">
+          Write a Review
+        </Link>
       </div>
     </div>
   );
