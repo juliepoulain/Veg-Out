@@ -5,6 +5,8 @@ import NavBar from "./NavBar";
 function ReviewForm({ name }) {
   const params = useParams();
   const id = params.id;
+
+
   const [menuItem, setMenuItem] = useState({});
   const [newReview, setNewReview] = useState({
     reviewContent: "",
@@ -14,13 +16,12 @@ function ReviewForm({ name }) {
 
   function handleChange(e) {
     setNewReview({ ...newReview, [e.target.name]: e.target.value });
-    console.log(newReview);
   }
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (JSON.stringify(newReview) == "{}") {
-      console.log("empty object - cannot post to db.json");
+    if (newReview.reviewContent == "") {
+      console.log("empty review - cannot post to db.json");
     } else {
       fetch(`http://localhost:6001/reviews`, {
         method: "POST",
