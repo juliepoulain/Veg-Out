@@ -5,9 +5,12 @@ import NavBar from "./NavBar";
 function ReviewForm({ name }) {
   const params = useParams();
   const id = params.id;
-
-  const [newReview, setNewReview] = useState({});
-  const [reviewData, setReviewData] = useState({});
+  const [menuItem, setMenuItem] = useState({});
+  const [newReview, setNewReview] = useState({
+    reviewContent: "",
+    reviewer: "",
+    menuItemId: id,
+  });
 
   function handleChange(e) {
     setNewReview({ ...newReview, [e.target.name]: e.target.value });
@@ -24,17 +27,19 @@ function ReviewForm({ name }) {
         headers: {
           "Content-Type": "Application/JSON",
         },
-        body: JSON.stringify({
-          reviewContent: newReview.review,
-          reviewer: newReview.reviewer,
-          menuItemId: id,
-        }),
+        body: JSON.stringify(newReview),
       })
         .then((r) => r.json())
         .then((newReview) => {
-          console.log("posted new review to db.json");
-          e.target.reset();
-          setNewReview({});
+          setMenuItem({
+            ...menuItem,
+            reviews: [...menuItem.reviews, newReview],
+          });
+          setNewReview({
+            reviewContent: "",
+            reviewer: "",
+            menuItemId: id,
+          });
         });
     }
   };
@@ -42,21 +47,21 @@ function ReviewForm({ name }) {
     fetch(`http://localhost:6001/menuItems/${id}?_embed=reviews`)
       .then((r) => r.json())
       .then((data) => {
-        setReviewData(data);
+        setMenuItem(data);
       });
   }, []);
 
   return (
     <section>
       <NavBar />
-      <h1>Review: {reviewData.menuItem}</h1>
-      <img src={reviewData.image} alt={reviewData.menuItem} />
+      <h1>Review: {menuItem.menuItem}</h1>
+      <img src={menuItem.image} alt={menuItem.menuItem} />
       <form onSubmit={handleSubmit}>
         <label>
           Review:
           <input
-            name="review"
-            value={reviewData.review}
+            name="reviewContent"
+            value={newReview.reviewContent}
             onChange={handleChange}
           />
         </label>
@@ -64,7 +69,7 @@ function ReviewForm({ name }) {
           Your Name:
           <input
             name="reviewer"
-            value={reviewData.reviewer}
+            value={newReview.reviewer}
             onChange={handleChange}
           />
         </label>
