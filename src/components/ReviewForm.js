@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import NavBar from "./NavBar";
 
-function ReviewForm({ name }) {
+function ReviewForm() {
   const params = useParams();
   const id = params.id;
 
@@ -31,15 +31,11 @@ function ReviewForm({ name }) {
         body: JSON.stringify(newReview),
       })
         .then((r) => r.json())
-        .then((newReview) => {
-          setMenuItem({
-            ...menuItem,
-            reviews: [...menuItem.reviews, newReview],
-          });
+        .then(() => {
           setNewReview({
             reviewContent: "",
             reviewer: "",
-            menuItemId: id,
+            menuItemId: id
           });
         });
     }
